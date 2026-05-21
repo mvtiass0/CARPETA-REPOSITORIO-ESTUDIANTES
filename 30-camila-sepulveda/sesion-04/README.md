@@ -7,9 +7,7 @@ Creado po **Lauren Mccarthy**, es una herramienta online muy amigable para apren
 
 ## Algoritmo: secuencia de instrucciones paso a paso, con lógicas, definidas, ordenadas y finitas que permiten solucionar un problema o hacer una tarea específica.
 
-           características principales:
-
-           Precisión: Cada paso debe estar clarísimo (sin ambigüedades).
+          
 
 Orden: Los pasos llevan una secuencia lógica.
 
