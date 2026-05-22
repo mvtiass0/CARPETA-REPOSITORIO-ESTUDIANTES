@@ -1,6 +1,6 @@
 
 
-# El peso de ser mujer
+# EL PESO DE SER MUJER
 ## Matias Montes, Catalina Carrasco
 
 ## Descripción y contextualización
