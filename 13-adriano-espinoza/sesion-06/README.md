@@ -1,161 +1,76 @@
-# sesión 06 - 14/04
-# Transformaciones y Condicionales
+# sesión 06 
+# Conceptos Clave en p5.js 
 
+## Lógica Condicional y Expresiones Booleanas
 
-#  Transformaciones
+Las **expresiones booleanas** son condiciones que el programa evalúa para decidir qué hacer.  
+> Ejemplo: Si un estudiante apaga las luces de la sala completamente.
 
-Las transformaciones modifican cómo se dibujan los elementos en el canvas.
+### Elementos de una Expresión Booleana
+
+Las expresiones booleanas se construyen con **3 componentes**:
+
+**1. Operandos (Valores)**  
+Son los datos que se van a evaluar:
+- Variables → como `x`, `y`, `mouseX`, `mouseY`
+- Constantes o literales  valores fijos como `5`, `"hola"` o `true/false`
 
 ---
 
-##  Radianes y Ángulos
+### Estructura If / Else if / Else
 
-Por defecto, `p5.js` trabaja con **radianes** para medir ángulos.
+La sentencia if evalúa una condición booleana y ejecuta un bloque de código según el resultado.
 
-```js
-angleMode(RADIANS);
-```
+js
+if (condición) {
+    // Se ejecuta si la condición es true
+} else if (condición2) {
+    // Se ejecuta si la condición2 es true
+} else {
+    // Se ejecuta si ninguna condición anterior fue true
+}
 
-Si quieres usar grados:
 
-```js
+>  Útil para programar botones, eventos interactivos y cualquier acción condicional.
+
+
+
+## Variables Dinámicas y Transformaciones
+
+### Ángulos: Radianes vs Grados
+
+p5.js trabaja con **radianes** por defecto, lo que puede resultar poco intuitivo.  
+Para simplificar, se recomienda agregar en el `setup()`:
+
+
 angleMode(DEGREES);
-```
-
----
-
-## rotate()
-
-Permite rotar elementos.
-
-### Sintaxis
-
-```js
-rotate(valor);
-```
-
-### Ejemplo
-
-```js
-rotate(20);
-```
-
-### Importante
-
-- La rotación ocurre alrededor del punto de origen `(0,0)`
-- Se recomienda usar junto a:
-  - `translate()`
-  - `rectMode(CENTER)`
-
----
-
-##  translate()
-
-Mueve el punto de origen del canvas.
-
-### Sintaxis
-
-```js
-translate(x, y);
-```
-
-### Ejemplo
-
-```js
-translate(200, 200);
-```
-
-Sirve para reposicionar objetos fácilmente.
-
----
-
-##  push() y pop()
-
-Guardan y restauran estados de transformación y estilos.
-
-### Sintaxis
-
-```js
-push();
-
-// transformaciones y estilos
-
-pop();
-```
 
 
----
+Esto permite trabajar con grados en lugar de radianes.
 
-##  scale()
+### Transformaciones del Lienzo
 
-Cambia la escala de los elementos.
+Funciones para mover y rotar elementos en el canvas:
 
-### Sintaxis
+- translate()` → Desplaza el origen del lienzo
+- rotate()` → Rota los elementos desde el punto de origen
 
-```js
-scale(x, y);
-```
+>  Para girar en sentido **antihorario**, usa valores negativos:  
+> rotate(-10);`
 
-### Ejemplo
+### Sistema de Memoria Temporal
 
-```js
-scale(2, 2);
-```
+Estas dos funciones trabajan en pareja para guardar y restaurar el estado del lienzo:
 
-Aumenta o reduce el tamaño según el factor indicado.
+- push() → Guarda el estado actual (estilos + transformaciones)
+- pop() → Restaura el estado guardado anteriormente
 
+### Escala
 
-#  Operadores
-
-##  Operadores de Comparación
-
-| Operador | Significado |
-|---|---|
-| `==` | Igual |
-| `!=` | Distinto |
-| `>` | Mayor |
-| `<` | Menor |
-| `>=` | Mayor o igual |
-| `<=` | Menor o igual |
+Permite modificar el tamaño de los elementos dibujados en el canvas.
 
 
 
-
-
-### Ejemplos
-
-```js
-true && false // false
-true || false // true
-!true // false
-```
-
----
-
-#  if - else if - else
-
-## Sintaxis
-
-js
-if (condicion) {
-
-} else if (otraCondicion) {
-
-} else {
-
-}
-
-
-### Ejemplo
-
-js
-if (mouseX > 200) {
-  fill(255, 0, 0);
-
-} else {
-  fill(0, 0, 255);
-}
-```
-
+  
 
 
