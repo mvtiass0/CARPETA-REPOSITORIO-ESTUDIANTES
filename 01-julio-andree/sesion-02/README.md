@@ -1,4 +1,4 @@
-# Breve historia de la computación 20-03-26
+# Breve historia de la computación  
 ### 1822  
 Charles Baddage idea una maquina como concepto para sintetizar el cálculo. Nacimiento de la automatización.  
 ### 1991  

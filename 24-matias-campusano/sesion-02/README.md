@@ -1,5 +1,7 @@
 # Apuntes-20-03
 
+# Apuntes-20-03
+
 ## Inicios de la computación y programación
     El Molino &#8594; CPU o Procesador  
     El Almacén &#8594; The Store o Memoria
@@ -19,7 +21,6 @@ Pixel y la imagén resterizada &#8594;
 ### Ada Lovelace  
 Matemática y escritora británica &#8594; inventora conceptual de *"la programación"*  
 &#8594; Invetora teórica del primer algoritmo
-
 ### Alan Turing  
 &#8594; Experimento mental de la computación moderna
 &#8594; "lo que más importa es el código por sobre la máquinda"  

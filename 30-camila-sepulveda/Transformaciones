@@ -1,0 +1,108 @@
+# Transformaciones y condicionales:
+
+## AngleMode: 
+
+Por defecto p5.js usa radianes para medir los ángulos,
+para cambiar a grados y así poder hacer arcs, se usa esto en el function setup
+angleMode(DEGREES).
+
+
+## Rotate:
+
+Sirve para rotar elementos, siempre está rotando alrededor del punto de origen (0,0). Esta transformación se recomienda usar con translate();
+y en algunos casos con rectMode(CENTER);.
+
+rotate(valor radianes o en grados);
+Ej: rotate(20);
+
+
+## Translate:
+
+Sirve para trasladar el punto de origen  (0,0) a otra coordenada especificada dentro del
+Canvas.
+
+translate(x,y);
+Ej: translate(200,200);
+
+## Push, pop:
+
+Funciones que trabajan juntas como
+un "sistema de memoria temporal"
+para el estilo y las transformaciones
+del lienzo. Sirve para que un movimiento no se traspase a todos los códigos, si no que lo encapsula en los códigos específicos que uno define. 
+
+push();
+pop();
+
+
+
+## Scale:
+
+ajusta la escala del sistema de coordenadas actual por
+el factor especificado, duplicando o haciendo un zoom la fuga que se escala.
+
+scale(x,y);
+Ej: scale(2,2);
+
+
+# Condicionales: 
+
+## Expresión booleana: 
+
+cualquier enunciado,dato o instrucción que, al ser evaluado, sólo
+puede arrojar uno de dos valores posibles:
+verdadero (True) o falso (False).
+
+Para poder construirlo se necesitan 3 elementos: 
+
+Operandos (o Valores): Datos
+básicos que se evalúan. Pueden ser, variables como x, y o mouseX,
+mouseY, etc o también con Constantes o Literales, que son valores
+fijos como 5, "Hola" o los mismos
+valores booleanos True y False.
+
+Operadores de Comparación:
+Permiten contrastar dos valores.
+ == (Igual a)
+ != (Diferente de)
+> o < (Mayor o menor que)
+ >= o <= (Mayor o igual / Menor o igual)
+
+Operadores Lógicos: 
+Combinan varias expresiones, como
+ AND (&&), que  es verdadero sólo si
+ambas partes son verdaderas o
+OR (||) que es verdadero si al menos
+una de las partes es verdadera y NOT (!) que Invierte el valor, donde si era
+
+verdadero, pasa a ser falso. 
+
+Ej: // menor que
+2 < 3 // devuelve true
+3 < 2 // devuelve false
+
+12 < 12 // devuelve false
+12 <= 12 // devuelve true
+
+'b' < 'a' // devuelve false
+'b' < 'c' // devuelve true
+
+
+# Sentencia condicionale: 
+
+## If - else if - else: 
+
+La sentencia if es una estructura que toma una condición expresada como un booleano y ejecuta una pieza de código contenida dentro de las llaves { }.
+
+If (condición) {ejecuta este código si es true}
+
+Además puede complementarse con la sentencia else if, que añade
+condiciones de prueba complementarias a la original, y con la sentencia else, que
+implica todos los casos que no cumplen con la condición original.
+
+else if (condición 2) {ejecuta este código si es true}
+
+Pero si no se cumplen ninguna de las anteriores se puede usar else, al ser todas las opciones falsas. 
+
+else {ejecuta este código si ambas condiciones son falsas}
+
