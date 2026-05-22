@@ -1,5 +1,5 @@
 # sesión 04 - 10/04
-# Bitácora de Pensamiento Computacional: De la Estática al Movimiento en p5.js
+#  De la Estática al Movimiento 
 
 ## Nuevos Conceptos e Implementación Técnica
 
