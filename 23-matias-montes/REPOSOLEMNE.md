@@ -74,6 +74,9 @@ La orquídea fue utilizada como referente por su relación con la feminidad, la 
 
 ---
 En cuanto a la composición tipográfica, se tomaron referentes donde el texto invade visualmente el espacio, generando sensaciones de presión y saturación. El uso de tipografías pesadas y agresivas busca representar la violencia de las palabras y el impacto psicológico que estas pueden generar sobre la mujer.
+<img width="540" height="756" alt="17794364985916783448613491936293" src="https://github.com/user-attachments/assets/74f61eff-0d83-4bab-b930-8e16d5cdb049" />
+
+---
 
 La combinación de estos referentes permite construir una experiencia visual inmersiva donde el espectador entra metafóricamente en los pensamientos de la protagonista, comprendiendo la carga emocional y mental producida por la presión social y la violencia verbal hacia las mujeres.
 
