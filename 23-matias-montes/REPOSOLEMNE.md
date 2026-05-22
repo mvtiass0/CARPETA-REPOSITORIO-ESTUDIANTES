@@ -58,8 +58,15 @@ La transición de color desde blanco hacia amarillo representa un cambio gradual
 El proyecto busca representar visualmente la presión social y la violencia verbal ejercida hacia la mujer, mostrando cómo estos discursos pueden generar ansiedad, saturación emocional y fragmentación mental. Para construir esta narrativa visual se utilizaron distintos referentes simbólicos y gráficos.
 
 Uno de los principales referentes corresponde a imágenes de figuras humanas con distorsiones visuales en la cabeza, utilizadas para representar el colapso mental provocado por la acumulación de críticas, insultos y pensamientos negativos. Estas alteraciones visuales simbolizan cómo la presión social invade el espacio mental y afecta la identidad femenina.
+<img width="1080" height="1080" alt="17794356174318004435705263220831" src="https://github.com/user-attachments/assets/e06a0882-4157-42e3-89a1-a04650591f30" />
+
+---
+
 
 También se incorporaron siluetas femeninas como recurso visual, permitiendo representar la identidad de la mujer desde una forma universal y simbólica. La ausencia de rasgos específicos refuerza la idea de pérdida de individualidad frente a las exigencias sociales y los estereotipos impuestos.
+<img width="1000" height="1080" alt="17794354776561062550569783356877" src="https://github.com/user-attachments/assets/fd6ff3b4-11e0-425f-9e2b-341e19612035" />
+
+---
 
 La orquídea fue utilizada como referente por su relación con la feminidad, la delicadeza y la vulnerabilidad. Además de su carga simbólica, su forma orgánica establece una relación visual con el cuerpo femenino, convirtiéndose en una representación de sensibilidad frente a la violencia verbal y social.
 
