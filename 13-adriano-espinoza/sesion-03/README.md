@@ -1,7 +1,5 @@
 # sesión 03 - 27/03
-# Bitácora de Pensamiento Computacional: Réplica en p5.js
-**Diseño UDP** **Estudiante:** [Tu Nombre]  
-**Fecha:** [Mayo, 2026]
+# Bitácora de Pensamiento Computacional
 
 ---
 
