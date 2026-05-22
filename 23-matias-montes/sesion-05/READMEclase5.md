@@ -4,8 +4,6 @@
 
 Esta presentación introduce conceptos fundamentales de transformaciones gráficas y lógica condicional en p5.js, orientados al desarrollo de proyectos de creative coding y pensamiento computacional.
 
-⸻
-
 Transformaciones en p5.js
 
 Las transformaciones permiten modificar la posición, orientación y tamaño de los elementos dentro del canvas.
