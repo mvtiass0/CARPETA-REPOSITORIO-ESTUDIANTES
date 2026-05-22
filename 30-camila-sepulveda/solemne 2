@@ -92,11 +92,261 @@ situaciones en una sociedad, donde no son comúnmente nombradas.
 ![imagen](Diagrama.png)
 
 
-
+## Código en p5.js: 
 
 ```javascript
+var fuente; //variable para cambiar tipografía
 
+let clicks = []; // activa la opción de apretar con el click, la interacción de la variables x e y en conjunto con mousepressed
 
+let angulo = 0; // variable para dar valor al angulo
+
+let miImagen1; // variable para guardar la imagen 1
+
+let miImagen2; // variable para guardar la imagen 2
+
+let colores; //variable para guardar diferentes opciones de coolores con una misma codificación
+
+function preload() {
+  // abre el preload
+  // función para precargar la imagen
+
+  texto = loadFont("Anton-Regular.ttf"); // configura la  carga de texto utilizando la tipografía anton
+
+  miImagen1 = loadImage("fondo.jpg");
+  //variable para insertar imagen a mesa de trabajo
+
+  miImagen2 = loadImage("ojo.png");
+  //variable para insertar imagen a la mesa de trabajo
+} // cierra el preload
+
+function setup() {
+  // esta es la funcion de inicio que se ejecuta una sola vez cuando comienza el programa
+
+  createCanvas(500, 500); //crea un lienzo de 500 px en x & 500 px en y
+
+  colores = [
+    // es la variable que contiene diferentes olores, para luego poderlos aplicar con random
+
+  color(255, 173, 253), // defino color rosado claro con valor (r, g , b)
+
+  color(255, 107, 253), // defino color rosado intermedio con valor (r, g , b)
+
+  color(245, 54, 243), // defino color fuccia con valor (r, g , b)
+  ];
+
+ angleMode(DEGREES); //activa los angulos para poder hacer circunferencias de forma más sencilla a través de angulos
+}
+
+function draw() {
+  // esta es la funcion que ejecuta en loop 60 veces por segundo
+  background(0, 0, 0); //agrego color negro al fondo en el valor (r, g , b)
+
+  push(); //encapsula el inicio de un movimiento para que no se expanda por las demas figuras
+  
+  angulo = angulo + 0.2; // se define angulo y se adecua el tiempo según el mocimiento que se busca
+  
+  translate(width / 2, height / 2); // translada la imagen 1 desplazandose por su eje negativo
+  
+  rotate(angulo); // rota la imagen 1 sobre su propio centro
+
+  image(miImagen1, 0, 0, height, width); // define posición y medida de la imagen insertada
+
+  pop(); //encapsula el inicio de un movimiento para que no se expanda por las demas figuras
+
+  for (let c of clicks) {
+    //cuando se haga click aparece la imagen como patrón según donde se presione el click
+    
+  image(miImagen2, c.x, c.y, 80, 50); // imagen y sus posciones y tamaños
+  }
+
+  noStroke(); //configuro que el triangulo no tenga borde
+  fill(255, 255, 255); // designo color blanco en valores (r, g , b)
+
+  triangle(150, 500, 350, 500, 250, 0); //creo triangulo en la posición de x, variable y , ancho, alto
+
+  circle(250, 70, 150); //creo circulo en la posición de x, variable y ,diámetro
+
+  fill(186, 28, 0); // designo color rojo en valores (r, g , b)
+
+  rect(15, 330, 42, 180); //creo rectangulo en la posición de x, variable y , ancho, alto
+
+  push(); //encapsula el inicio de un movimiento para que no se expanda por las demas figuras
+
+  scale(2); //escala la medida definida del rectangulo   a su doble de tamaño
+
+  rect(35, 130, 42, 180); //creo rectangulo en la posición de x, variable y , ancho, alto
+
+  pop(); //encapsula el final de un movimiento para que no se expanda por las demas figuras
+
+  push(); //encapsula el inicio de un movimiento para que no se expanda por las demas figuras
+
+  scale(2); //escala la medida definida del rectangulo a su doble de tamaño
+
+  rect(175, 150, 40, 100); //creo rectangulo en la posición de x, variable y , ancho, alto
+
+  pop(); //encapsula el final de un movimiento para que no se expanda por las demas figuras
+
+  rect(442, 330, 42, 180); //creo rectangulo en la posición de x, variable y , ancho, alto
+
+  rect(385, 125, 200, 30); //creo rectangulo en la posición de x, variable y , ancho, alto
+
+  square(420, 180, 80); //creo cuadrado en la posición de x, variable y , más su lado
+
+  square(0, 125, 80); //creo cuadrado en la posición de x, variable y , más su lado
+
+  fill(255, 255, 255); //color blanco en valores (r, g , b) relleno interior del eclipse
+
+  ellipse(46, 153, 40, 25); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(420, 140, 35, 20); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(440, 220, 30, 15); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(480, 220, 30, 15); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(35, 370, 30, 15); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(35, 420, 30, 15); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(111, 300, 40, 25); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(388, 335, 40, 25); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(388, 400, 40, 25); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  ellipse(463, 350, 30, 15); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  fill(0, 0, 0); //color negro en valores (r, g , b)  relleno interior del circulo
+
+  circle(461, 348, 10); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(384, 331, 12); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(384, 396, 12); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(117, 298, 12); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(55, 150, 12); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(39, 369, 10); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(39, 419, 10); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(437, 219, 10); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(478, 219, 10); //creo circulo en la posición de x, variable y , más su diámetro
+  
+  circle(417, 137, 10); //creo circulo en la posición de x, variable y , más su diámetro
+
+  noStroke(); //configuro que el triangulo no tenga borde
+  
+  let c = random(colores); //creo alteración de colores, en una misma figura
+  
+  fill(c); // designo color random en valores (r, g , b)
+
+  let cambioTamano = map(mouseY, 0, height, 50, 100); //agranda y disminuye el tamaño de una figura, manteniendose en su mismo lugar
+
+  ellipse(250, 70, cambioTamano, cambioTamano * 0.6); //creo ellipse en la posición de x, variable y , más su alto y ancho
+
+  //condional: si el valor de mouse x es mayor que 200 y menor que 350 y ademas el valor de mouse y es mayor que 200 y menor que 350
+  if (mouseX > 200 && mouseX < 350 && mouseY > 200 && mouseY < 350) {
+    // si eso se cumple pon los textos
+
+  textSize(30); //medida para tamaño del texto
+    
+  fill(0, 0, 0); //color negro relleno interior del texto
+    
+  stroke(255, 63, 23); //color rojo contorno del texto
+    
+  strokeWeight(3); //ancho o grosor contorno del texto
+    
+  textFont("texto"); //cambia la tipografia del texto a la seleccionada anton
+
+  text("GUAPA", 15, 365); // se designa la frase que se  aplicaran en el skecth y su ubicación x e y
+    
+  text("FIU FIU", 375, 230); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("WUAXITA RICA", 10, 280); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("PRECIOSA", 350, 175); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("BOMBÓN", 30, 440); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("DELICIOSA", 205, 240); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("MUÑEQUITA", 150, 400); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("TIRA UN BESITO", 260, 2); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("RICA CARNE", 120, 480); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("ESTAI COMO PA MI", 230, 110); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("PRINCESA", 30, 55); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("A DONDE VA", 310, 70); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+
+  text("MAMACITA", 190, 35); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+
+  text("QUE BUENA ESTÁ", 200, 335); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+
+  text("QUE SHORTCITO", 10, 200); // se designa la frase que se aplicaran en el skecth y su ubucación x e y
+    
+  text("MANSA YEGUA", 10, 135); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("HERMOSA", 340, 460); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+    
+  text("COSITA", 230, 165); // se designa la frase que se aplicaran en el skecth y su ubicación x e y
+
+    //condional: si el valor de mouse x es menor o igual que 450 y ademas el valor de mouse y es mayor o igual que 400
+    
+  } else if (mouseX <= 450 && mouseY >= 400) {
+    // si nada de lo anterior se cumple pon un rectangulo rojo en ubicación x e y
+
+    fill(186, 28, 0); //color rojo en valores (r, g , b) relleno interior del texto
+    
+    rect(0, 0, 500, 500); //creo rectangulo en la posición de x, variable y , ancho, alto
+    
+  } else {
+    // si nada de lo anterior se cumple pon los siguintes textos y sus color blanco, tipografia, tamaño, posición en x e y
+
+    textSize(22); //medida para tamaño del texto
+    
+    fill(255, 255, 255); //color blanco en valores (r, g , b)  relleno interior del texto
+    
+    textFont("texto"); //cambia la tipografia del texto a la seleccionada anton
+
+    text("la calle te", 25, 80); // se designa la frase que se aplicaran en el skecth y ubicación x e y
+    
+    text("observa", 390, 80); // se designa la frase que se aplicaran en el skecth y ubicación x e y
+  }
+}
+
+function mousePressed() {
+  //interacción con el usuario, cuando mouse se presiona sucede lo siguiente
+
+      for (var i = 0; i < width; i++) {
+    //recorre horizontalmente
+    
+      for (let j = 0; j < height; j++) {
+      //recorre verticalmente
+      
+      let x = i * 90; //posición en x
+      
+      let y = 30 + j * 100; //posición en y
+
+      //condional: si el valor de mouse x es mayor que x y mouse x es menor que x más 80 y mouse y mayor que y, mouse y menor que y más 50. verifica que el click haya ocurrido dentro de lo solicitado
+
+       if (mouseX > x && mouseX < x + 80 && mouseY > y &&            mouseY < y + 50) {
+        // si eso se cumple al hacer click funciona el mousepressed
+        
+        clicks.push({ x: x, y }); //guarda la posición del click y su imagen correspondiente
+        return; // detiene la función, llevandose a por medio de un regreso de rebote
+      }
+    }
+  }
+}
 ```
 
 
