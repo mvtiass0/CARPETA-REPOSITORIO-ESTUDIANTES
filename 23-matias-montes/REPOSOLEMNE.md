@@ -86,4 +86,4 @@ La combinación de estos referentes permite construir una experiencia visual inm
 
 El objetivo del proyecto es representar de manera interactiva la presión psicológica y emocional que puede experimentar la mujer debido a las críticas, expectativas y violencia verbal presentes en la sociedad, utilizando herramientas de programación visual para generar una experiencia inmersiva que provoque empatía, reflexión e incomodidad en el espectador.
 
-p5*js: [Aqui dentro](https://editor.p5js.org/catalinacarrasco/sketches/RixkEBgWQ)
+Link canvas p5*js: [Aqui](https://editor.p5js.org/catalinacarrasco/sketches/RixkEBgWQ)
