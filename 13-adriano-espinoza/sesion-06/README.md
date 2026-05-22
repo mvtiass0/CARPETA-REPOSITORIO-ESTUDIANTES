@@ -1,50 +1,75 @@
 # sesión 06 - 14/04
+# Conceptos Clave en p5.js 🎨
 
-## Variables dinámicas nuevas ;o  
+## Lógica Condicional y Expresiones Booleanas
 
-### Angulos Radiales  
+Las **expresiones booleanas** son condiciones que el programa evalúa para decidir qué hacer.  
+> Ejemplo: Si un estudiante apaga las luces de la sala completamente.
 
-P5 utiliza por defecto los angulos en radiales, esto puede ser complejo de entender y sostener.   
-Para facilitar utilizaremos en el setup el **angleMode(DEGREES)** esto nos permitirá trabajar con grados y no palabras.
+### Elementos de una Expresión Booleana
 
-### Rotation y Traslate
+Las expresiones booleanas se construyen con **3 componentes**:
 
-Para hac
--> translate()  
--> rotation()
+**1. Operandos (Valores)**  
+Son los datos que se van a evaluar:
+- Variables → como `x`, `y`, `mouseX`, `mouseY`
+- Constantes o literales  valores fijos como `5`, `"hola"` o `true/false`
 
-### Guardar y restaurar  
+---
 
-Funciones que trabajan juntas como un "sistema de memoria temporal" para el estilo y las transformaciones del lienzo.  
--> push();  
--> pop();
+### Estructura If / Else if / Else
 
-* Si yo quiero que un objeto gire o vaya en sentido antihorario, debo colocar un "-"
+La sentencia if evalúa una condición booleana y ejecuta un bloque de código según el resultado.
 
-  ## If - else if - else  
-La sentencia if es una estructura especial que existe en casi todos los lenguajes de  programación; toma una condición –expresada como un booleano–  
-y ejecuta una pieza de código contenida dentro de las llaves { }  
+js
+if (condición) {
+    // Se ejecuta si la condición es true
+} else if (condición2) {
+    // Se ejecuta si la condición2 es true
+} else {
+    // Se ejecuta si ninguna condición anterior fue true
+}
 
-Ejemplo: If(condición){ejecutra este código si es true}  
-else if:(condición 2){ejecutra este código si es true}
-else{ejecuta este código si ambas condiciones son falsas}
+
+>  Útil para programar botones, eventos interactivos y cualquier acción condicional.
 
 
-#### Operadores  
-Para construir las expresiones booleanas se usan 3 elementos  
--> Operandos (o Valores): Son datos básicos que se evalúan. Puede ser  
-      -> Variables: como X, Y, mouseX, etc.
-      -> Constantes o litearales: Valores fijos como "5, hola" o los mismos booleanos
 
--> Operaciones de comparación: Permite constrastar valores
-      -> == Igual a
-      -> != Desigual a
-      -> > o < Mayor o menor a  
-      -> >= o =< Igual o mayor/menor
+## Variables Dinámicas y Transformaciones
 
--> Operadores Lógicos: Sirven para combinar varias expresiones  
-      -> andperson **&&** Es verdadero solo si ambas partes son verdaderas.  
-      -> or (||) A diferencia de & devuelve true cuando al menos uno de los operandos es igual a true.
+### Ángulos: Radianes vs Grados
+
+p5.js trabaja con **radianes** por defecto, lo que puede resultar poco intuitivo.  
+Para simplificar, se recomienda agregar en el `setup()`:
+
+
+angleMode(DEGREES);
+
+
+Esto permite trabajar con grados en lugar de radianes.
+
+### Transformaciones del Lienzo
+
+Funciones para mover y rotar elementos en el canvas:
+
+- translate()` → Desplaza el origen del lienzo
+- rotate()` → Rota los elementos desde el punto de origen
+
+>  Para girar en sentido **antihorario**, usa valores negativos:  
+> rotate(-10);`
+
+### Sistema de Memoria Temporal
+
+Estas dos funciones trabajan en pareja para guardar y restaurar el estado del lienzo:
+
+- push() → Guarda el estado actual (estilos + transformaciones)
+- pop() → Restaura el estado guardado anteriormente
+
+### Escala
+
+Permite modificar el tamaño de los elementos dibujados en el canvas.
+
+
 
   
 
