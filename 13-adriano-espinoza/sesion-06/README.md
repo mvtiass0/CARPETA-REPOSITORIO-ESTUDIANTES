@@ -1,5 +1,5 @@
 # sesión 06 
-# Conceptos Clave en p5.js 🎨
+# Conceptos Clave en p5.js 
 
 ## Lógica Condicional y Expresiones Booleanas
 
