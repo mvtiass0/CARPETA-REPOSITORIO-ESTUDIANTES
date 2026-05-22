@@ -1,0 +1,105 @@
+SOLEMNE 2: documentación README.md 
+
+El nombre del proyecto es “la calle te observa", diseñado por Camila Sepúlveda. 
+Este proyecto consiste en desarrollar a través del código una problemática de género 
+de manera abstracta, específicamente el sketch va enfocado en el acoso callejero, 
+llevado a cabo por el género masculino dirigido al femenino. 
+
+En la pantalla se observa un acontecimiento de acoso callejero, en donde está presente el acosado, 
+el acosador y las sensaciones que transmite ser la víctima de esta situación. Se ve desarrollado
+por medio de figuras rectangulares, cuadradas, ovalos, círculo, triangulo, texto e imagenes.  
+
+La idea central del proyecto es visibilizar una situación de acoso callejero en pleno surgimiento,
+para dar a demostrar una de las problemáticas de género que están presentes en Chile dentro de la actualidad
+y cómo se percibe desde una perspectiva de contraste de superioridad, poder en los hombres y delicadeza, 
+vulnerabilidad en las mujeres, dándose a demostrar la diferente entre uno y el otro, siendo las mujeres 
+mayoritariamente víctimas de seguridad, donde el 52% de la población total ha sido víctima de acoso callejero
+y cada 9 de 10 mujeres son víctimas de aquello. 
+
+Se desarrolla en el sistema de diseño mostrando de forma abstracta los diferentes papeles y escenas que conlleva
+el acoso callejero, tanto como los hombres con una actitud más robusta, peligrosa, rígida e intimidante y el de la 
+mujer, más suave, delicada y pequeña. También se muestra el contexto en el que se lleva a cabo, en un camino donde 
+el paso de la mujer está iluminado, donde todos la ven, pero alrededor de ella, por el fondo hay una total oscuridad 
+y vacío donde se encuentran sus atacantes, que es lo que la mujer no puede controlar, pero que tiene cierto grado de 
+esperanza que se puede salir del lugar de abuso, dando a demostrar que las manchas y movimientos del fondo, transmite 
+que nada es cien por ciento oscuro. 
+
+La presencia masculina está en constante observación y seguimiento del género femenino, lo que causa un desenlace de agobio 
+y explosión emocional de parte del género femenino, que absorbió un constante acecho en observación y piropos callejeros, hasta 
+llegar a la superación e inestabilidad. 
+
+Mi Primera regla de oro en el sistema es que mouseX > 200 && mouseX < 350 && mouseY > 200 && mouseY < 350, que se ve representado
+en la aparición de textos dispersos por el canvas. Esta acción busca reflejar con el movimiento del mouse, que al pasar por el 
+recorrido que realiza el género femenino, termina concluyendo en un acoso callejero y las acciones que conllevan a aquello, como
+los piropos o el constante hostigamiento. La segunda regla de oro es con mouseX <= 450 && mouseY >= 400, que caracteriza y genera 
+el cierre del acontecimiento de acoso callejero dándole un fin, ya que se genera un colapso por parte del género femenino por el alto
+temor y hostigamiento dirigido por el género masculino. 
+
+Para el input necesite triangulos, ovalos, circulos, rectangulos, cuadrados, textos e imagenes y además el contenido a desarrollar,
+el acoso callejero. 
+
+Por otro lado, en el algoritmo se procesó con el propósito de construir una circunstancia de cómo se lleva a cabo un 
+acontecimiento de acoso callejero. Para aquello se tuvo que transformar una construcción, primero se coloca la imagen de
+textura de fondo, generando una atmósfera en la escena, acompañado con un movimiento rotate y translate, luego la construcción 
+de figuras, comenzando con el recorrido que realiza el 
+
+género femenino, guiado por un triángulo como base y círculo blanco que lo acontece, ambas figuras se encuentran de inicio
+a fin ubicado en el centro del canvas. Luego se continúa con la representación del género masculino, por medio de los rectángulos 
+y cuadrados rojos, ubicados en los laterales y en la zona inferior del canvas, para después posicionar los ojos del genero masculino,
+por medio del ovalo blanco y el circulo negro, ubicadolos sobre las figuras cuadradas y rectangulares rojas. Para continuar se posiciona 
+sobre el círculo blanco la representación del género femenino, por medio de un óvalo, que contiene fill random, de paletas cromáticas rosadas, 
+además está acompañado de un function map llamado por la variable cambioTamano. Por otro lado se implementó la imagen 2, los ojos de fondo, 
+que está acompañado con la  function mousePressed y el uso de un doble for. Para otra parte se agrega dos funciones de texto, el primero 
+“La calle te observa” y el segundo el complemento de varios textos que son “princesa”, “mamacita”, “a donde va”, “mansa yegua”, “estai como pa mi”,
+“que shortcito”, “cosita”, “preciosa”, “deliciosa”, “fiu fiu”, “wuaxita rica”, “que buena está”, “tira un besito”, “guapa”, “muñequita”, “bombón”,
+“rica carne” y “hermosa”, que está acompañado de la condicional if y para finalizar se agrega un cuadrado rojo acompañado de la condicional else if. 
+
+Esta composición causa una respuesta visual, transmitiendo sensaciones, demostrando sucesos, para así reflejar como resultado final 
+una gran problemática, el acoso callejero de parte del género masculino dirigido al femenino.
+
+La construcción contiene reglas que gobiernan el sistema, como la utilización de figuras geométricas y orgánicas como los elementos 
+principales de la construcción, para mantener una estética abstracta y de libre interpretación, un desarrollo más legible y limpio, 
+para que sea de carácter artístico pero informativo. Por otra parte el uso de imágenes como elemento complementario dentro de una atmósfera 
+y el texto como un segundo pilar dentro del proyecto, para dar una guia mas literal a dónde se dirige el propósito de la composición y como 
+se termina desencadenando. 
+
+En ámbitos interactivos está la utilización de translate y rotate, aplicados en la imagen 1, la textura de fondo que genera un ambiente de
+contexto dentro de la composición, de esta manera refleja que la atmósfera está en un constante movimiento, transición y no es un tranquilo 
+o rígido, ya que siempre sucederán circunstancias que uno no se espera y cada dia pueda cambiar. Por otro lado el óvalo de la representación 
+del género femenino contiene fill random, para representar los diferentes estados emocionales, de pensamientos e inestabilidad al momento de 
+vivir una situación de acoso callejero, ya que en ese momento uno está en constante estímulo, sensaciones y un cierto desequilibrio. Además el 
+óvalo está acompañado de un function map llamado por la variable cambioTamano, para representar el estado del género femenino y cómo se va ampliando 
+por su colapso por la constante acumulación de acoso. Este crecimiento va acompañado del surgimiento de una acumulación de textos que entregan un 
+contexto de acoso callejero verbal, se utiliza la condición if para representar en conjunto de sensaciones, donde la representación del género 
+femenino colapsa se conecta con esta consecuencia del texto, representando al hostigamiento callejero. Además este colapso por hostigamiento 
+llega un quiebre, a un desenlace por exceso de presión, causando la aparición de un cuadrado rojo, acompañado de la condicional else if, que
+transmite que el temor llegó a superar por completo el ambiente, que fue más grande, no se pudo controlar y generó un colapso y miedo excesivo 
+por parte del género femenino. Por último mousePressed con la fotografía 2 de los ojos, representando la constante y excesiva observación no solo 
+por el género masculino, si no que pasa desapercibido que la observación es parte de la sociedad y lo realizan todas las personas que la integran,
+volviéndose algo más masivo. 
+
+Para la realización del sketch, me inspiré en 3 referentes. El primero es Noma Bar, como inspiración visual de cómo desarrolla sus ilustraciones,
+de manera minimalista y con la utilización del color plano y la forma como elemento predominante en el diseño. El segundo referente visual es Jenny 
+Holzer, por su utilización del texto como forma de expresión y comunicación de la problemática y poderlo entender de una forma más clara y directa a 
+través del texto, que es de cierta manera intrusivo. Por último Barbara Kruger como referente histórica, donde sus ideas centrales son el control 
+social, exposición pública de la mujer, la mirada masculina sobre el cuerpo femenino y la violencia verbal, siendo una gran referente de un pilar
+importante de cómo se puede llevar a cabo una lucha de género a través del diseño y como poder hacer una diferencia y marcar una historia al contar
+situaciones en una sociedad, donde no son comúnmente nombradas. 
+
+
+## Diagrama de flujo: 
+
+![imagen](Diagrama.png)
+
+
+
+
+```javascript
+
+
+```
+
+
+
+
+
