@@ -1,4 +1,3 @@
-Introducción a p5.js — Resumen Clase 1
 
 ¿Qué es p5.js?
 
