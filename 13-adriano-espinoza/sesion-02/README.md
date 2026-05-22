@@ -37,3 +37,10 @@ El telar automático utilizaba tarjetas perforadas para tejer diseños complejos
 * **John & James Whitney:** Pioneros de la animación digital. Modificaron un computador analógico de la SGM (director de tiro M-5) para convertir voltajes en movimientos de cámara y luz en celuloide (*Five Film Exercises*, 1943). Introdujeron el **Diseño Paramétrico** y el **Movimiento Armónico**.
 * **Sketchpad (Ivan Sutherland, 1963):** Primer programa que permitió dibujar directo en pantalla con un lápiz óptico. Sentó las bases del CAD e introdujo visualmente la **Programación Orientada a Objetos (POO)** mediante "copias maestras".
 * **Douglas Engelbart (1968):** Presentó formalmente los conceptos de *bitmapping*, ventanas de interfaz y la manipulación directa a través del uso del **mouse**.
+
+##  Fase 3: Democratización del Creative Coding
+####  Las 4 Libertades Esenciales del Software Libre:
+-  **Libertad 0 (Uso):** Ejecutar el programa para cualquier propósito.
+-  **Libertad 1 (Estudio):** Estudiar cómo funciona el programa y modificarlo (requiere acceso al código fuente).
+-  **Libertad 2 (Distribución):** Redistribuir copias para ayudar a la comunidad.
+-  **Libertad 3 (Mejora):** Mejorar el programa y hacer públicas las mejoras para beneficio común (requiere código fuente).
