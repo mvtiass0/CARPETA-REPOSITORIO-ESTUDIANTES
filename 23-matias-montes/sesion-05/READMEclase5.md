@@ -47,7 +47,7 @@ Consideraciones
     * rectMode(CENTER)
 
 
-##% translate()
+### translate()
 
 La función translate() mueve el punto de origen del sistema de coordenadas.
 
