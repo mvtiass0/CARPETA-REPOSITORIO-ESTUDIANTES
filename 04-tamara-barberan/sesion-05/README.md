@@ -1,4 +1,4 @@
-# sesión 04 - 10/04
+# sesión 05 - 10/04
 # CLASE: Transformaciones y condicionales
 
 ### Transformaciones:
