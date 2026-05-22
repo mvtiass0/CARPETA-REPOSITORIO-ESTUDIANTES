@@ -7,25 +7,25 @@ La presentación introduce el uso de variables dinámicas en p5.js, enfocándose
 Se trabajan conceptos fundamentales de programación visual usando variables integradas del sistema, variables personalizadas y funciones matemáticas útiles para manipular datos dinámicos.
 
 
-Movimiento e Interacción
+## Movimiento e Interacción
 
 El enfoque principal es crear experiencias interactivas utilizando datos que cambian constantemente, como la posición del mouse o el tamaño de la ventana del navegador.
 
 
-Variables del Mouse
+##Variables del Mouse
 
 p5.js incluye variables integradas que permiten acceder en tiempo real a la posición del cursor.
 
-Variables principales
+## Variables principales
 
-Variable	Descripción
+## Variable	Descripción
 mouseX	Posición horizontal del mouse
 mouseY	Posición vertical del mouse
 pmouseX	Posición horizontal anterior
 mouseIsPressed	Detecta si el mouse está presionado
 mouseButton	Detecta qué botón fue presionado
 
-Ejemplo
+## Ejemplo
 
 ellipse(mouseX, mouseY, 100, 100);
 
@@ -43,13 +43,13 @@ height	Alto del canvas
 
 Variables del Teclado
 
-Variable	Descripción
+## Variable	Descripción
 key	Última tecla presionada
 keyCode	Código de tecla especial
 keyIsPressed	Detecta si alguna tecla está presionada
 
 
-Variables de Tiempo
+## Variables de Tiempo
 
 Variable	Descripción
 frameCount	Número de frames desde el inicio
@@ -63,7 +63,7 @@ windowHeight	Alto de la ventana del navegador
 focused	Detecta si la ventana está activa
 
 
-Creación de Variables Propias
+## Creación de Variables Propias
 
 La presentación explica cómo crear variables personalizadas usando JavaScript.
 
@@ -72,14 +72,14 @@ Declaración de Variables
 let posicionX;
 const velocidad = 5;
 
-Conceptos
+## Conceptos
 
 * let → variables dinámicas
 * const → variables constantes
 * var → sintaxis antigua aún presente en tutoriales antiguos
 
 
-Objetos en JavaScript
+## Objetos en JavaScript
 
 Los objetos permiten agrupar múltiples variables relacionadas dentro de una sola estructura.
 
@@ -130,7 +130,7 @@ Aplicaciones
 * Posiciones dinámicas
 
 
-Tamaño del Canvas y Ventana
+## Tamaño del Canvas y Ventana
 
 Variables
 
@@ -164,7 +164,7 @@ En este caso:
 * cuando mouseX es pequeño → el tamaño será pequeño
 * cuando mouseX aumenta → el tamaño también aumenta proporcionalmente
 
-Usos comunes
+## Usos comunes
 
 * Controlar tamaños
 * Manipular colores
@@ -172,7 +172,7 @@ Usos comunes
 * Relacionar interacción con visuales
 
 
-Conceptos Clave
+## Conceptos Clave
 
 Variables dinámicas
 
@@ -187,12 +187,12 @@ El sketch responde continuamente a:
 * Tiempo
 * Tamaño de ventana
 
-Programación Creativa
+## Programación Creativa
 
 El uso de variables y funciones dinámicas permite transformar gráficos estáticos en experiencias visuales interactivas.
 
 
-Herramientas y Funciones Aprendidas
+## Herramientas y Funciones Aprendidas
 
 * mouseX
 * mouseY
@@ -207,7 +207,7 @@ Herramientas y Funciones Aprendidas
 * Objetos en JavaScript
 
 
-Enlaces de Referencia
+## Enlaces de Referencia
 
 Documentación Oficial
 
