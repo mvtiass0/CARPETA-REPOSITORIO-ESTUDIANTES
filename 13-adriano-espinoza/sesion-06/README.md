@@ -1,4 +1,4 @@
-# sesión 06 - 14/04
+# sesión 06 
 # Conceptos Clave en p5.js 🎨
 
 ## Lógica Condicional y Expresiones Booleanas
