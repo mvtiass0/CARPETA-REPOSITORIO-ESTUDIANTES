@@ -1,18 +1,16 @@
 Datos Dinámicos y Variables en p5.js
 
-Introducción
+## Introducción
 
 La presentación introduce el uso de variables dinámicas en p5.js, enfocándose en cómo generar interacción, movimiento y comportamientos reactivos dentro de sketches de programación creativa.
 
 Se trabajan conceptos fundamentales de programación visual usando variables integradas del sistema, variables personalizadas y funciones matemáticas útiles para manipular datos dinámicos.
 
-⸻
 
 Movimiento e Interacción
 
 El enfoque principal es crear experiencias interactivas utilizando datos que cambian constantemente, como la posición del mouse o el tamaño de la ventana del navegador.
 
-⸻
 
 Variables del Mouse
 
@@ -33,7 +31,6 @@ ellipse(mouseX, mouseY, 100, 100);
 
 Este ejemplo dibuja una elipse que sigue el movimiento del cursor.
 
-⸻
 
 Variables Integradas en p5.js
 
@@ -43,7 +40,6 @@ Variable	Descripción
 width	Ancho del canvas
 height	Alto del canvas
 
-⸻
 
 Variables del Teclado
 
@@ -52,15 +48,12 @@ key	Última tecla presionada
 keyCode	Código de tecla especial
 keyIsPressed	Detecta si alguna tecla está presionada
 
-⸻
 
 Variables de Tiempo
 
 Variable	Descripción
 frameCount	Número de frames desde el inicio
 deltaTime	Tiempo entre frames
-
-⸻
 
 Variables de Ventana
 
@@ -69,7 +62,6 @@ windowWidth	Ancho de la ventana del navegador
 windowHeight	Alto de la ventana del navegador
 focused	Detecta si la ventana está activa
 
-⸻
 
 Creación de Variables Propias
 
@@ -86,7 +78,6 @@ Conceptos
 * const → variables constantes
 * var → sintaxis antigua aún presente en tutoriales antiguos
 
-⸻
 
 Objetos en JavaScript
 
@@ -111,7 +102,6 @@ Los objetos ayudan a:
 * Agrupar información relacionada
 * Facilitar la manipulación de elementos complejos
 
-⸻
 
 Función random()
 
@@ -139,7 +129,6 @@ Aplicaciones
 * Colores aleatorios
 * Posiciones dinámicas
 
-⸻
 
 Tamaño del Canvas y Ventana
 
@@ -157,7 +146,6 @@ createCanvas(windowWidth, windowHeight);
 
 Esto permite que el canvas se adapte automáticamente al tamaño de la ventana del navegador.
 
-⸻
 
 Función map()
 
@@ -183,7 +171,6 @@ Usos comunes
 * Ajustar velocidades
 * Relacionar interacción con visuales
 
-⸻
 
 Conceptos Clave
 
@@ -204,7 +191,6 @@ Programación Creativa
 
 El uso de variables y funciones dinámicas permite transformar gráficos estáticos en experiencias visuales interactivas.
 
-⸻
 
 Herramientas y Funciones Aprendidas
 
@@ -220,7 +206,6 @@ Herramientas y Funciones Aprendidas
 * const
 * Objetos en JavaScript
 
-⸻
 
 Enlaces de Referencia
 
